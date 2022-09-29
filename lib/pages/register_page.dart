@@ -126,10 +126,10 @@ class _RegisterPageState extends State<RegisterPage> {
                   SizedBox(
                     width: double.infinity,
                     height: 50.0,
-                    child: RaisedButton(
-                      elevation: 0.0,
-                      color: Colors.blue,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+                    child: ElevatedButton(
+                      // elevation: 0.0,
+                      // color: Colors.blue,
+                      // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
                       child: Text('Register', style: TextStyle(color: Colors.white, fontSize: 16.0)),
                       onPressed: () {
                         _onRegister();

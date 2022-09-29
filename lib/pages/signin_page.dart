@@ -79,6 +79,12 @@ class _SignInPageState extends State<SignInPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
+                  FloatingActionButton(onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage())
+                    );
+                  }),
                   Text("Create or Join Groups", style: TextStyle(color: Colors.white, fontSize: 40.0, fontWeight: FontWeight.bold)),
                 
                   SizedBox(height: 30.0),
@@ -120,10 +126,10 @@ class _SignInPageState extends State<SignInPage> {
                   SizedBox(
                     width: double.infinity,
                     height: 50.0,
-                    child: RaisedButton(
-                      elevation: 0.0,
-                      color: Colors.blue,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+                    child: ElevatedButton(
+                      // elevation: 0.0,
+                      // color: Colors.blue,
+                      // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
                       child: Text('Sign In', style: TextStyle(color: Colors.white, fontSize: 16.0)),
                       onPressed: () {
                         _onSignIn();
